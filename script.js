@@ -5,8 +5,7 @@ window.addEventListener('load', (event) => {
         if (params.get('test')) {
             // document.title = params.get('test');
             // return params.get('test');
-            
-            window.localStorage.setItem('name',"hello")
+            document.cookie = "username=Max Brown";
     }
   }
   });
