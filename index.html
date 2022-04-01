@@ -18,10 +18,15 @@
                 if (params.get('test')) {
                     // document.title = params.get('test');
                     // return params.get('test');
-                    response.json().then(data => {
-                      'text' = params.get('test');
-  // do something with your data
-});
+                    
+                  var http = require('http');
+                    
+                    var app = http.createServer(function(req,res){
+                        res.setHeader('Content-Type', 'application/json');
+                        res.end(JSON.stringify({ number: 1 , name: 'John'}));
+                    });
+                      
+                    app.listen(3000);
                 }
             }
           });
