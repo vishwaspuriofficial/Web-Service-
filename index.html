@@ -17,7 +17,11 @@
             if (params.has('test')) {
                 if (params.get('test')) {
                     // document.title = params.get('test');
-                    return params.get('test');
+                    // return params.get('test');
+                    response.json().then(data => {
+                      'text' = params.get('test');
+  // do something with your data
+});
                 }
             }
           });
