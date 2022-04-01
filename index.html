@@ -4,7 +4,7 @@
     <title>Data Returner</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,,500,600,700" rel="stylesheet">
 
     <!-- <link rel="shortcut icon" type="image/x-icon" href="link.png" /> -->
@@ -24,7 +24,7 @@
                     $.ajax({
   type: "POST",
   url: "https://reqbin.com/echo/post/json",
-  data: JSON.stringify({ "userName": userName, "password" : password }),
+  data: JSON.stringify({ "userName": "abc", "password" : "abc" }),
   contentType: "application/json",
   success: function (result) {
     console.log(result);
