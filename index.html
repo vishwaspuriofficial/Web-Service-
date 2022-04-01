@@ -22,7 +22,7 @@
                     
                     var jsonPerson = '{"first_name":"billy", "age":23}';
                     var personObject = JSON.stringify(jsonPerson);
-                    textbox.val(personObject);
+                    document.getElementById('myTextarea').value = personObject;
                 }
             }
           });
