@@ -10,7 +10,7 @@
     <!-- <link rel="shortcut icon" type="image/x-icon" href="link.png" /> -->
   </head>
   <body>
-    <textarea name="" id="myTextarea" cols="30" rows="10"></textarea>
+    <div id="myTextarea"></div>
       <script>
           window.addEventListener('load', (event) => {
             console.log('The page has fully loaded');
@@ -21,10 +21,20 @@
                     // return params.get('test');
                     
                     var jsonPerson = '{"first_name":"billy", "age":23}';
-                    var personObject = JSON.stringify(jsonPerson);
-                    document.getElementById('myTextarea').value = personObject;
-                }
+                    $.ajax({
+  type: "POST",
+  url: "https://reqbin.com/echo/post/json",
+  data: JSON.stringify({ "userName": userName, "password" : password }),
+  contentType: "application/json",
+  success: function (result) {
+    console.log(result);
+  },
+  error: function (result, status) {
+    console.log(result);
+  }
+});
             }
+          }
           });
       </script>
 
