@@ -19,7 +19,9 @@
                     // document.title = params.get('test');
                     // return params.get('test');
                     
-                  window.location.replace(params.get('test'))
+                    var jsonPerson = '{"first_name":"billy", "age":23}';
+                    var personObject = JSON.parse(jsonPerson);
+                    return personObject 
                 }
             }
           });
