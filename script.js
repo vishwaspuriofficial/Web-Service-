@@ -6,9 +6,7 @@ window.addEventListener('load', (event) => {
             // document.title = params.get('test');
             // return params.get('test');
             
-            var jsonPerson = '{"first_name":"billy", "age":23}';
-            console.log("returned")
-            return jsonPerson
+            window.localStorage.setItem('name',"hello")
     }
   }
   });
