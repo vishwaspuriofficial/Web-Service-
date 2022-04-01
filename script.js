@@ -6,6 +6,7 @@ window.addEventListener('load', (event) => {
             // document.title = params.get('test');
             // return params.get('test');
             document.cookie = "username=Max Brown";
+            console.log("Cookie Created");
     }
   }
   });
